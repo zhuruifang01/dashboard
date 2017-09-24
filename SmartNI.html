@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Smart NI</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script src="js/echarts.min.js"></script>
+		<script src="js/createcharts.js"></script>
+	    <script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	
+	<body>
+		<div class="outer">
+			<div class="nav" style="position:relative;">
+					<div class="nav-left">
+						<a href="index.html"><img class="logo" src="img/tubiaologo_03.png" /></a>
+					</div>
+					<div class="nav-right nav-right2">Philippines Smart NI Project</div>
+				<!--/国旗／时间-->
+				    <div class="chose chose2">
+						<div class="chose-area chose-l" style="cursor: pointer;">
+							<img  class="gq" src="img/shouye_06.png" style="margin-top:22px;"/>
+							<div class="chose-nation" style="display: none; ">
+								<div class="us nation">
+									<img src="img/1.png" />
+								</div>
+								<div class="ch nation">
+									<img src="img/2.png" />
+								</div>
+								<div class="cr nation">
+									<img src="img/3.png" />
+								</div>
+							</div>
+						</div>
+						<div class="time chose-l"></div>
+						<ul class="Npo_Ni" style="position:absolute;top:0;bottom:0;right:20px;margin:auto;">
+							<li class="active">NI</li>
+							<li><a href="index.html">NPO</a></li>
+						</ul>
+				   </div>
+			</div>
+			<!--内容区-->
+			<div class="conntent conntent2">
+                  <div class="top">
+					  <div class="map">
+						  <div class="con"></div>
+					  </div>
+					  <div class="right">
+						  <div class="one">
+							  <div class="con"></div>
+						  </div>
+						  <div class="two">
+							  <div class="con" style="position:relative;">
+								  <div id="chart1" style="width:100%;height:100%;"></div>
+								  <ul class="Npo_Ni" style="position:absolute;top:6px;right:10px;">
+									  <li class="active">DAY</li>
+									  <li><a href="index.html">MTH</a></li>
+								  </ul>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="bottom" style="position:relative;">
+					  <div class="left">
+						  <div class="con" style="position:relative;">
+							  <div id="chart2" style="width:100%;height:100%;"></div>
+							  <ul class="xuanze xuanze1">
+								  <li class='active' style="background:#90cdf0;float:left;">SQI</li>
+								  <li style="background:#e49557;position:absolute;left:0;right:0;margin:auto;">SeQI</li>
+								  <li style="background:#f3ce92;float:right;">HHS</li>
+							  </ul>
+						  </div>
+					  </div>
+					  <div class="center">
+						  <div class="con" style="position:relative;">
+							  <div id="chart3" style="width:100%;height:100%;"></div>
+							  <ul class="xuanze xuanze2">
+								  <li class='active' style="background:#90cdf0;float:left;">PAT</li>
+								  <li style="background:#e49557;position:absolute;left:0;right:0;margin:auto;">SA</li>
+								  <li style="background:#f3ce92;float:right;">FRA</li>
+							  </ul>
+						  </div>
+					  </div>
+					  <div class="right" style="position:relative">
+						  <div class="con" style="position:relative;">
+							  <div class="title">Top Lead Time Sites</div>
+							  <ul class="Npo_Ni Npo_Ni3" style="position:absolute;top:6px;right:10px;">
+								  <li class="active">1</li>
+								  <li><a href="index.html">2</a></li>
+							  </ul>
+							  <div class="biaoge biaoge1">
+								  <ul>
+									  <li></li>
+									  <li>Site ID</li>
+									  <li>Lead time(day)</li>
+									  <li>Vender</li>
+								  </ul>
+								  <ul class="oushu">
+									  <li>1</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul>
+									  <li>2</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul class="oushu">
+									  <li>3</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul>
+									  <li>4</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul class="oushu">
+									  <li>5</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+							  </div>
+							  <div class="biaoge biaoge2">
+								  <ul>
+									  <li></li>
+									  <li>Site ID</li>
+									  <li>Lead time(day)</li>
+									  <li>Vender</li>
+								  </ul>
+								  <ul class="oushu">
+									  <li>1</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul>
+									  <li>2</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul class="oushu">
+									  <li>3</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul>
+									  <li>4</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+								  <ul class="oushu">
+									  <li>5</li>
+									  <li></li>
+									  <li></li>
+									  <li>YinDa</li>
+								  </ul>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			</div>
+			<div class="foot">
+				Shanghai Yinda Technology Industrial Co.,Ltd Copyright@ 2012-2017 All Rights Reserved
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
