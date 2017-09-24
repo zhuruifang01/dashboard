@@ -1,6 +1,6 @@
   var createcharts={};//创建函数对象
    //柱状图1的函数：
-        createcharts.chart1=function(Xdata,Ydata1,Ydata2){
+        createcharts.chart1=function(xx,Xdata,Ydata1,Ydata2){
         $(function(){
           var chart1= echarts.init(document.getElementById('chart1'));
           var option = {
@@ -38,7 +38,7 @@
               xAxis : [
                   {   splitLine:{show:false},
                       type : 'category',
-                      name : 'x/day',
+                      name :xx,
                       data :Xdata,
                       axisTick: {
                           alignWithLabel: true
