@@ -225,7 +225,7 @@
                   }
               },
               title: {
-                  text:"Weekly Report Submitted",
+                  text:"Monthly Report Submitted",
                   textStyle: {
                       fontSize: 20,
                       fontWeight:'normal',
