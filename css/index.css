@@ -230,7 +230,7 @@ body{
 
 .conntent2 .right .con .title{font-size:20px;color:#218be2;text-align:center;margin-top:6px;}
 .conntent2 .right .con .biaoge{
-	width:90%;height:82%;
+	width:90%;height:82%;font-size:14px;
 	margin:0 auto;margin-top:14px;border:1px solid #d5d5d5;
 }
 .conntent2 .right .con .biaoge ul{
