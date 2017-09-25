@@ -57,11 +57,11 @@ $('.chose .time').text(str);
 //初始化：
 	//柱状图1；
 		zhu1X=['Mon','Tues','Wed','Thur','Fri','Sat','Sun'];
-		zhu1Y1=[54,84,42,42,42,40,3];
-		zhu1Y2=[63,64,68,66,71,43,4];
+		zhu1Y1=[34,36,32,37,31,30,3];
+		zhu1Y2=[36,37,35,38,31,32,3];
         zhu1X2=['Mar','Apr','May','June','July','Aug','Sep'];
-        zhu1Y11=[0,0,0,0,0,1845,916];
-        zhu1Y22=[0,0,0,0,0,1061,1125];
+        zhu1Y11=[0,0,0,0,0,45,32];
+        zhu1Y22=[0,0,0,0,0,49,36];
 		createcharts.chart1('x/day',zhu1X,zhu1Y1,zhu1Y2);
     //柱状图2；
 		zhu2Y1_SQI=[0,0,0,0,0,3.48,4];
@@ -75,7 +75,7 @@ $('.chose .time').text(str);
 		zheY1_PAT=[0,0,0,0,0,13,37];
 		zheY1_SA=[0,0,0,0,0,0,0];
 		zheY1_FAC=[0,0,0,0,0,0,0];
-		createcharts.chart3('#218be2','PAT',zhu1X2,zheY1_PAT);
+        createcharts.chart3('#90cdf0','SA',zhu1X2,zheY1_SA);
 
    var BG_height=$('.biaoge ul li').height();
    $('.biaoge ul li').css({'line-height':BG_height+'px'});
@@ -130,10 +130,10 @@ $('.chose .time').text(str);
 				if(num2>=3){num2=0;}
 				$(".xuanze2 li").removeClass("active").eq(num2).addClass('active');
 				if(num2==1){
-					createcharts.chart3('#e49557','SA',zhu1X2,zheY1_SA);
+                    createcharts.chart3('#e49557','PAT',zhu1X2,zheY1_PAT);
 				}else if(num2==2){
-					createcharts.chart3('#f3ce92','FRA',zhu1X2,zheY1_FAC);
-				}else{createcharts.chart3('#218be2','PAT',zhu1X2,zheY1_PAT);}
+					createcharts.chart3('#f3ce92','FAC',zhu1X2,zheY1_FAC);
+				}else{createcharts.chart3('#90cdf0','SA',zhu1X2,zheY1_SA);}
 			}
 			var t2=setInterval(zhe,5000);
 			//鼠标停留停止轮播：
@@ -147,11 +147,11 @@ $('.chose .time').text(str);
 				var index=$(this).index(".xuanze2 li");
 				$(".xuanze2 li").removeClass("active").eq(index).addClass('active');
 				if(index==1){
-                    createcharts.chart3('#e49557','SA',zhu1X2,zheY1_SA);
+                    createcharts.chart3('#e49557','PAT',zhu1X2,zheY1_PAT);
 				}else if(index==2){
-                    createcharts.chart3('#f3ce92','FRA',zhu1X2,zheY1_FAC);
+                    createcharts.chart3('#f3ce92','FAC',zhu1X2,zheY1_FAC);
 				}else{
-                    createcharts.chart3('#218be2','PAT',zhu1X2,zheY1_PAT);
+                    createcharts.chart3('#90cdf0','SA',zhu1X2,zheY1_SA);
 				}
 
 			});
